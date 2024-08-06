@@ -42,7 +42,6 @@ nav {
 header {
     display: flex;
     align-items: left;
-    background-color: #2c3e50;
     padding: 100px 20px;
     text-align: left;
 }
@@ -52,6 +51,34 @@ header {
     margin-top: 200px;
     margin-left: 100px;
 }
+.projectText{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: white;
+    padding-top: 150px;
+}
+.projects{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: none;
+}
+.overlay{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white; 
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+}
+
 .hugetext {
     text-wrap: wrap;
     font-size: 50px;
@@ -110,3 +137,20 @@ img {
     border-radius: 50%;
 }
 
+.projectlinked{
+    gap: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.projectlinked:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+#emailed a{
+    text-decoration: none;
+    color: white;
+}
+
+#emailed a:hover{
+    text-decoration: underline;
+}

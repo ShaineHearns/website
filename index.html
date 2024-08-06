@@ -10,13 +10,14 @@
     <nav>
         <div class="logo">Shaine Hearns</div>
         <div class="nav-links">
-            <a href="#" class="nav-item">Home</a>
-            <a href="#about-me" class="nav-item">About Me</a>
-            <a href="#contact" class="nav-item">Contact</a>
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="aboutme.html" class="nav-item">About Me</a>
+            <a href="contact.html" class="nav-item">Contact</a>
         </div>
     </nav>
     <header>
-        <h1 class="hugetext">Shaine<br>Hearns</h1>
+        <h1 class="hugetext">Shaine<br>Hearns<br><br><br>Rising Senior At<br>Eastern Christian<br>High School</h1>
+        <br>
         <a href="https://github.com/ShaineHearns" target="_blank" class="circlelink">
             <img src="github.png" class="linkedlogos">
         </a>
@@ -25,14 +26,17 @@
         </a>
     </header>
     <div class="content" id="about-me">
-        <img src="picture.png">
-        <div class="information">Hello! I'm Shaine, and I'm from The Bronx, New York. 
-            I am currently attending Eastern Christian High School, where I have developed a strong interest in psychology and technology.
-            I am passionate about exploring how these fields intersect and how they can be applied to real-world problems. Outside of my academic pursuits, I enjoy playing football, video games, and spending time with my friends and family.
+        <div class="information">Welcome to my personal website! Use the navigation bar above to look around.
         </div>
-    <div class="contact" id="contact">
-        <h2 class="contactheading">Contact</h2>
-        <h3 class="contact">Email: shaine.hearns123@gmail.com</h3>
-    </div>
+    <script>
+        function applySavedBackgroundColor() {
+            let savedColor = localStorage.getItem('backgroundColor');
+            console.log("Saved color: ", savedColor); // Add this line for debugging
+            if (savedColor) {
+                document.body.style.backgroundColor = savedColor;
+            }
+        }
+        window.onload = applySavedBackgroundColor;
+    </script>
 </body>
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aboutme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    function applySavedBackgroundColor() {
+            let savedColor = localStorage.getItem('backgroundColor');
+            if (savedColor) {
+                document.body.style.backgroundColor = savedColor;
+            }
+        }
+        window.onload = applySavedBackgroundColor;
+</script>
+<nav>
+    <div class="logo">Shaine Hearns</div>
+    <div class="nav-links">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="aboutme.html" class="nav-item">About Me</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+    </div>
+</nav>
+<body>
+    <div class="content" id="about-me">
+        <img src="picture.png">
+        <div class="information">Hello! I'm Shaine, and I'm from The Bronx, New York. 
+            I am currently attending Eastern Christian High School, where I have developed a strong interest in psychology and technology.
+            I am passionate about exploring how these fields intersect and how they can be applied to real-world problems. Outside of my academic pursuits, I enjoy playing football, video games, and spending time with my friends and family.
+        </div>
+    <div class ="projectText">Projects</div>
+    <button id ="projectButton">Show Projects</button>
+    <button id="backgroundButton">Change BG Color</button>
+    <button id="resetBG">Reset BG Color</button>
+    <div class = "projects" id = "projectDiv">
+        <a href="https://github.com/ShaineHearns/MASH" target="_blank" class = "projectlinked">
+            <img src="MASH.png">
+            <div class="overlay">M*A*S*H Project</div>
+        </a>
+        <img src="placeholder.png">
+        
+        
+    </div>
+
+
+
+    <script src ="script.js"></script>
+</body>

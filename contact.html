@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Shaine Hearns</div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="aboutme.html" class="nav-item">About Me</a>
+            <a href="contact.html" class="nav-item">Contact</a>
+        </div>
+    </nav>
+    <div class="contact" id="contact">
+        <h2 class="contactheading">Contact</h2>
+        <h3 class="contact" id ="emailed">
+            Email: 
+            <a href="mailto:shaine.hearns123@gmail.com">shaine.hearns123@gmail.com</a>
+            <br>
+            <br>
+            <br>
+            <div id="slideText" class="slide-text">Click above to email me</div>
+        </h3>
+    </div>
+    <script>
+        function applySavedBackgroundColor() {
+                let savedColor = localStorage.getItem('backgroundColor');
+                if (savedColor) {
+                    document.body.style.backgroundColor = savedColor;
+                }
+            }
+            window.onload = applySavedBackgroundColor;
+    </script>
+</body>
